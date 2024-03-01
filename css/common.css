@@ -1,0 +1,88 @@
+:root {
+    font-family: "Rubik Light";
+    font-size: 15px;
+    color: lightgrey; 
+}
+
+
+body {
+    background-color: rgb(30,30,30);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0,0,0);
+}
+body::-webkit-scrollbar-thumb {
+    background: darkcyan;
+}
+.Title {
+    color: rgb(0, 182, 182);
+}
+
+h1.Title {
+    text-align: center; /* Centre le texte horizontalement */
+    /*background-color: darkcyan;
+    border : solid 0.4rem;*/
+    border-left: 0;
+    border-right: 0;
+    /*border-color:rgb(0,0,0);
+    color: rgb(30,30,30);*/
+    color:darkcyan ;
+}
+
+
+div.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+div.identifiants {
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.identifiants div {
+    margin: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+/*a {
+    color: rgb(0, 102, 204);
+}*/
+
+.navbar {
+    width: 100%;
+    background-color: darkcyan;
+    border : solid 0.4rem;
+    border-left: 0;
+    border-right: 0;
+    border-color:rgb(0,0,0);
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 4%;
+
+}
+
+.navbar-nav li {
+    margin-left: 8%;
+    margin-right:8% ;
+}
+
+.navbar a {
+    color : rgb(30,30,30);
+}
+
+svg {
+    margin-left: 1rem;
+    fill: darkcyan;
+}
