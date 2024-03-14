@@ -4,8 +4,8 @@ h2.Title {
 }
 
 img.face {
-    width: auto; /* Ajustez la largeur de l'image selon vos besoins */
-    height: 45vh; /* Pour conserver les proportions de l'image */
+    width: 30vw; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* Pour conserver les proportions de l'image */
 }
 
 
