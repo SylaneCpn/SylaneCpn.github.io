@@ -2,7 +2,7 @@
 const acc = document.querySelectorAll(".accordion-title");
 
 // Parcours de chaque élément
-acc.forEach(function(item) {
+acc.forEach((item) => {
     item.addEventListener("click", function() {
         // Bascule de la visibilité du contenu
         let panel = this.nextElementSibling;
