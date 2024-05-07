@@ -2,3 +2,14 @@
     display: flex;
     flex-direction: column;
 }
+
+.txt {
+    
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    target : blank;
+}
