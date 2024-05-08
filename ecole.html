@@ -59,7 +59,7 @@
                     de contrôler le robot de manière libre. Le contrôle du robot lorsqu'il est en mode manuel et le changement de mode en lui même se fait par un IHM réalisé dans le 
                     cadre du projet.
                  </p>
-                 <p><a href="https://web.enib.fr/~kerhoas/robot_ros_index.html">Plus d'infos ici</a></p>
+                 <p><a href="https://web.enib.fr/~kerhoas/robot_ros_index.html" target="_blank">Plus d'infos ici</a></p>
              </div>
          </div>
          <div class="accordion">
@@ -69,7 +69,7 @@
                  <p>Le but du projet est de configurer un ensemble de micro-contrôleurs sur lesquels se trouvent différents capteurs (température, luminosité, pression atmosphérique, gyroscope, etc...) et de les relier 
                     ensemble dans un réseau de bus CAN (Controller Area Network). Les cartes sont interrogés par un IHM qui envoie des requêtes puis récupère les réponses et affiche les données.
                  </p>
-                 <p><a href="https://web.enib.fr/~kerhoas/rescapt_cours_index.html">Plus d'infos ici</a></p>
+                 <p><a href="https://web.enib.fr/~kerhoas/rescapt_cours_index.html" target="_blank">Plus d'infos ici</a></p>
                  <div class="img_box">
                     <img src="img/CAN.jpg" class="resize"></img>
                     <p class = "legend">Une photo de l'IHM conçu lors du projet</p>
@@ -86,7 +86,7 @@
                     de la carte. Le reste des composants avaient pour rôle de fournir des fonctions suppléméntaires au micro-contrôleur (filtre, capteurs de température).
                 </p>
                 <p>Le système asservi était contrôlé par un IHM qui devait à la fois fois fournir un signal de commande à la carte mais aussi afficher un graphique montrant l'évolution de 
-                    la température. La carte à été modélisé sur le logiciel Eagle, l'IHM à été fait en python et la logique du micro-contrôleur à été écrite en C.
+                    la température. La carte à été modélisé sur le logiciel Eagle, l'IHM à été fait en Python et la logique du micro-contrôleur à été écrite en C.
                 </p>
                  <div class="img_box">
                     <img src="img/ips.png" class="resize" ></img>
@@ -105,13 +105,14 @@
                  <p>Le projet de fin de semestre du module consistait à traiter des images de crevettes afin de détecter et d'identifier des crevettes présentes sur des
                     images à l'aide des methodes enseignées pendant le semestre.
                  </p>
+                 <p>Les traitements ont été fait à partir de la bibliothèque Opzn CV de Python.</p>
 
                  <div class="img_box">
-                 <div class="img_row">
+                    <div class="img_row">
                         <img src="img/crevettes.png" class="resize" ></img>
                         <img src="img/crevettes_c.png" class="resize" ></img>
-                </div> 
-                    <p class = "legend">Schéma block de la structure de la carte</p>
+                    </div> 
+                    <p class = "legend">Une image où les crevettes ont été identifié et labelisé</p>
                 </div>
              </div>
          </div>
@@ -120,6 +121,11 @@
             <h2 class="accordion-title">Recycl'ENIB</h2>
              <div class="accordion-content">
                  <p>Création d'un jeu vidéo en C++ visant à simuler de façon ludique le tri des déchets</p>
+                 <p>En conduite de projet objet en 3ème année à l'ENIB propose de concevoir une application mettant en avant des valeurs écologiques et en utilisant les méthodes agiles. Mes camarades et moi avons décidé
+                    de réaliser un jeu en C++ à l'aide de la bibliothèque SFML en simulant de façon ludique le tri des déchets. </p>
+                <p>Le projet n'est complètement abouti mais il reste quand même jouable.</p>
+                <p>J'ai beaucoup appris de ce projet en particulier sur la façon de travailler sur une base de code en équipe.</p>
+                <p>Si vous voulez essayer de compiler le code ou de l'améliorer le code source se trouve <a href="https://github.com/sylanecpn/recyclenib" target="_blank">ici</a>.</p>
              </div>
          </div>
 
@@ -127,6 +133,24 @@
             <h2 class="accordion-title">Monster Runner</h2>
              <div class="accordion-content">
                  <p>Création d'un jeu vidéo sur terminal codé en Python</p>
+                 <p>Lors de l'initiation au projet informatique en 1ère année de l'ENIB, il était proposé de réalisé un petit jeu vidéo en Python jouable sur 
+                    terminal.
+                 </p>
+                 <p>Le choix du sujet devait respecter le theme "course". J'ai choisi de créer un jeu original <span style="font-style: italic;">"Monster Runner"</span>.
+                Le principe est le suivant :</p>
+                <ul>
+                    <li>Un terrain est créé sur le terminal</li>
+                    <li>Le joueur apparait avec un certain nombre de vies défini à gauche du terrain, son but est de rejoindre le côte droit du terrain le plus vite possible</li>
+                    <li>Le terrain est truffé de monstres qui se déplace de ma même manière que le joueur.</li>
+                    <li>Si le joueur touche un monstre il pert une vie</li>
+                    <li>Le joueur avance à chaque frame, à la même vitesse que les monstres,il peut cependant choisir la direction dans laquelle il bouge</li>
+                    <li>Le joueur peut récolter différent bonus qui donne divers avantages (ou désavantages) au joueur</li>
+                    <li>Si le joueur atteint le côté gauche du terrain, le niveau se termine et passe au suivant</li>
+                    <li>A chaque fin de niveau, le joueur obteint des points en fonction du temps qu'il à mis pour complêter le niveau</li>
+                    <li>Les niveaux deviennent de plus en plus diffice</li>
+                    <li>la partie se termine quand le joueur n'a plus de vie, son score est alors enregistré</li>
+                </ul>
+                <p>Malheuresemnt j'ai égaré le code souce du jeu, il n'est plus possible d'y jouer :(</p>
              </div>
          </div>
          <article><h2 class = "Title">Stages</h2></article>
@@ -134,14 +158,14 @@
          <div class="accordion">
             <h2 class="accordion-title">BLUE SOLUTIONS 2023</h2>
              <div class="accordion-content">
-                 <p>Conception et réalisation de boitiers électriques permettant le test de fonctionalités de batteries éléctriques servant à alimenter différents types de véhicules</p>
+                 <p>Conception et réalisation de boitiers électriques permettant le test de fonctionalités de batteries éléctriques servant à alimenter différents types de véhicules.</p>
              </div>
          </div>
 
          <div class="accordion">
             <h2 class="accordion-title">ENAG 2022</h2>
              <div class="accordion-content">
-                 <p>Cablages d'armoires électriques servant le controle de mode de fonctionnements de patrouilleurs</p>
+                 <p>Cablages d'armoires électriques servant le controle de mode de fonctionnements de patrouilleurs.</p>
              </div>
          </div>
          <article><h2 class = "Title">Autres</h2></article>
@@ -149,6 +173,13 @@
             <h2 class="accordion-title">Projet IHH-Warming Slate</h2>
              <div class="accordion-content">
                  <p>Aide au jeunes isolés de Plouzané</p>
+                 <p>Le projet Ingénieur Honête Hommede l'ENIB, à pour objectif de sensibiliser les étudiant aux enjeux socio-environnementaux
+                    en les implicant dans un projet servant à adresser ces enjeux. </p>
+                    <p>Mes camarades et moi avons décidé de construire une chauffage à ardoise low-tech destiné à la paroisse de Plouzané où vivent des jeunes isolé. </p>
+                    <p>Une collaboration avec La Caisse à Clou de Brest avait pour but d'oragniser des ateliers visant à contruire avec les jeunes isolées, le chauffage qui sera installé à la paroise. Ces ateliers permettent à la fois 
+                    la réalisation d'un objet utile à ceux qui en ont besoin mais aussi de partager des expériences et un savoir faire réutilisable.
+                    </p>
+                    <p>Un grand merci à La Caisse à Clou de nous avoir aidé et prêté du matériel pour pouvoir réaliser nos ateliers.</p>
              </div>
          </div>
     <div class="contact">
