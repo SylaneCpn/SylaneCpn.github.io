@@ -10,6 +10,11 @@
     margin-bottom: 2rem;
 }
 
-a {
-    target : blank;
+
+img.face {
+    height: 60vh;
+    margin: auto;
+    /*display: block;*/
+    border : solid 0.4rem;
+    border-color: black;
 }

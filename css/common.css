@@ -102,6 +102,7 @@ div.identifiants div {
     padding-right: 8%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    font-size: 0.8rem;
 }
 .navbar-nav li:hover {
     background-color: rgb(0, 127, 139);
