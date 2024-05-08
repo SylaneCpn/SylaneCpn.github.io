@@ -26,7 +26,7 @@
     </header>
     <article>
         <h2 class="Title">Qu'est-ce qu'on trouve ici ?</h2>
-        <p>Bienvenue sur la page ecole.Ici vous trouverez quelques les projets notables que j'ai réalisé lors de mon cursus à l'ENIB mais aussi les activitées que j'ai fait en stage.</p>
+        <p>Bienvenue sur la page ecole. Ici vous trouverez quelques les projets notables que j'ai réalisé lors de mon cursus à l'ENIB mais aussi les activitées que j'ai fait en stage.</p>
         <p>Les projets qui se trouvent ici sont ceux du cycle ingénieur (le cycle préparatoire étant plus théorique) mais il ya quand même des choses à dire sur mes premières année à l'ENIB . </p>
         </article>
 
@@ -34,31 +34,64 @@
         <div class="accordion">
             <h2 class="accordion-title">Projet OS</h2>
              <div class="accordion-content">
-                 <p>Réalisation d'un systhème d'exploitation pour carte NXP</p>
-                 <a href=""></a>
+                <p>Réalisation d'un systhème d'exploitation pour carte NXP.</p>
+                <p>Le but de la conception est d'implémenter les fonctionalités principales attendues d'un système d'exploitation. En particulier
+                    le multitaches (avec la notion d'appels systèmes, l'allocation de mémoire et le changement de contexte, la gestion d'une queue de processus notemment fait par 
+                    l'utilisation de sémaphores) et la gestions de périphériques (les drivers).
+                </p>
+
+                <p>Au final nous obtenos un système capable de générer plusieurs processus en évitant les disfonctionnements typiques tels que l'interblocage et la famine et de gérer 
+                    un système de fichiers et d'autres drivers.
+                </p>
              </div>
          </div>
 
          <div class="accordion">
             <h2 class="accordion-title">Projet Robot</h2>
              <div class="accordion-content">
-                 <p>Programmation d'un robot mobile sur carte STM32.Gestion de plusieurs taches en parallèle</p>
-                 <a href="https://web.enib.fr/~kerhoas/robot_ros_index.html">Plus d'infos ici</a>
+                 <p>Programmation d'un robot mobile sur carte STM32.Gestion de plusieurs taches en parallèle.</p>
+
+                 <p>L'ENIB possède des robots mobiles équipées de différents capteurs. Le but du projet est de concevoir un programme capable 
+                    de gérer en parallèle la dection de mouvement et le tracking de cible.</p>
+
+                    <p>Le robot doit pouvoir alterner entre 3 modes différents : le mode auto qui 
+                    avance tout seul en évitant les obstacles sur sa route, le mode tracking qui suit une cible proche d'une couleur spécifique et le mode manuel qui permet 
+                    de contrôler le robot de manière libre. Le contrôle du robot lorsqu'il est en mode manuel et le changement de mode en lui même se fait par un IHM réalisé dans le 
+                    cadre du projet.
+                 </p>
+                 <p><a href="https://web.enib.fr/~kerhoas/robot_ros_index.html">Plus d'infos ici</a></p>
              </div>
          </div>
          <div class="accordion">
             <h2 class="accordion-title">Reseau de capteurs</h2>
              <div class="accordion-content">
-                 <p>Communication de différents capteurs controllés par des cartes STM32,reliés en liaison CAN (Controller Area Network) à un IHM permettant à un opérateur de visualiser les valeurs</p>
-                 <a href="https://web.enib.fr/~kerhoas/rescapt_cours_index.html">Plus d'infos ici</a>
+                 <p>Communication de différents capteurs controllés par des cartes STM32,reliés en liaison CAN (Controller Area Network) à un IHM permettant à un opérateur de visualiser les valeurs.</p>
+                 <p>Le but du projet est de configurer un ensemble de micro-contrôleurs sur lesquels se trouvent différents capteurs (température, luminosité, pression atmosphérique, gyroscope, etc...) et de les relier 
+                    ensemble dans un réseau de bus CAN (Controller Area Network). Les cartes sont interrogés par un IHM qui envoie des requêtes puis récupère les réponses et affiche les données.
+                 </p>
+                 <p><a href="https://web.enib.fr/~kerhoas/rescapt_cours_index.html">Plus d'infos ici</a></p>
+                 <div class="img_box">
+                    <img src="img/CAN.jpg" class="resize"></img>
+                    <p class = "legend">Une photo de l'IHM conçu lors du projet</p>
+                </div>
              </div>
          </div>
 
          <div class="accordion">
             <h2 class="accordion-title">Asservissement d'une résistance chauffante controllé en puissance </h2>
              <div class="accordion-content">
-                 <p>Conception d'une carte éléctronique permettant l'Asservissementd'un systhème de chauffage controllé par IHM</p>
-                 <a href=""></a>
+                 <p>Conception d'une carte éléctronique permettant l'asservissement d'un systhème de chauffage controllé par IHM</p>
+                 <p>Le principe du projet était de créer un système de chauffage simple, une resistance dévait être contrôlée et asservie afin que 
+                    la température cible atteigne la température de commande. Un micro-contrôleur avait pour but de contôler l'asservissement et de gérer la logique
+                    de la carte. Le reste des composants avaient pour rôle de fournir des fonctions suppléméntaires au micro-contrôleur (filtre, capteurs de température).
+                </p>
+                <p>Le système asservi était contrôlé par un IHM qui devait à la fois fois fournir un signal de commande à la carte mais aussi afficher un graphique montrant l'évolution de 
+                    la température. La carte à été modélisé sur le logiciel Eagle, l'IHM à été fait en python et la logique du micro-contrôleur à été écrite en C.
+                </p>
+                 <div class="img_box">
+                    <img src="img/ips.png" class="resize" ></img>
+                    <p class = "legend">Schéma block de la structure de la carte</p>
+                </div>
              </div>
          </div>
 
@@ -66,7 +99,20 @@
             <h2 class="accordion-title">Traitement d'images</h2>
              <div class="accordion-content">
                  <p>Reconnaissance et segmentation de crevettes à l'aide procédés de traitements d'images</p>
-                 <a href=""></a>
+                 <p>Lors de la 4ème année à l'ENIB, les étudiants ont la possibilité de se "spécialiser" et de choisir un module de spécialité. C'est comme ça 
+                    que j'ai choisi le module "traitement du signal et de l'image" qui s'incrit dans la continuité des cours de traitement du signal de 3ème année. 
+                 </p>
+                 <p>Le projet de fin de semestre du module consistait à traiter des images de crevettes afin de détecter et d'identifier des crevettes présentes sur des
+                    images à l'aide des methodes enseignées pendant le semestre.
+                 </p>
+
+                 <div class="img_box">
+                 <div class="img_row">
+                        <img src="img/crevettes.png" class="resize" ></img>
+                        <img src="img/crevettes_c.png" class="resize" ></img>
+                </div> 
+                    <p class = "legend">Schéma block de la structure de la carte</p>
+                </div>
              </div>
          </div>
 
@@ -74,7 +120,6 @@
             <h2 class="accordion-title">Recycl'ENIB</h2>
              <div class="accordion-content">
                  <p>Création d'un jeu vidéo en C++ visant à simuler de façon ludique le tri des déchets</p>
-                 <a href=""></a>
              </div>
          </div>
 
@@ -82,7 +127,6 @@
             <h2 class="accordion-title">Monster Runner</h2>
              <div class="accordion-content">
                  <p>Création d'un jeu vidéo sur terminal codé en Python</p>
-                 <a href=""></a>
              </div>
          </div>
          <article><h2 class = "Title">Stages</h2></article>
@@ -91,7 +135,6 @@
             <h2 class="accordion-title">BLUE SOLUTIONS 2023</h2>
              <div class="accordion-content">
                  <p>Conception et réalisation de boitiers électriques permettant le test de fonctionalités de batteries éléctriques servant à alimenter différents types de véhicules</p>
-                 <a href=""></a>
              </div>
          </div>
 
@@ -99,7 +142,6 @@
             <h2 class="accordion-title">ENAG 2022</h2>
              <div class="accordion-content">
                  <p>Cablages d'armoires électriques servant le controle de mode de fonctionnements de patrouilleurs</p>
-                 <a href=""></a>
              </div>
          </div>
          <article><h2 class = "Title">Autres</h2></article>

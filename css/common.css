@@ -153,3 +153,7 @@ svg {
     font-style: italic;
     margin-top: 0.1rem;
 }
+
+.img_row {
+    display: flex;
+}
