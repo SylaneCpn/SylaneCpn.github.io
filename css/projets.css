@@ -2,3 +2,10 @@ article {
     margin-left: 5rem;
     margin-right: 5rem;
 }
+
+img {
+    border : solid 0.4rem;
+    border-color: black;
+    display: block;
+    margin:auto;
+}
