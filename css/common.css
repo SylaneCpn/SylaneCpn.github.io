@@ -1,10 +1,10 @@
 :root {
-    font-family: "Rubik Light", sans-serif;
+    font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-    /*font-size: 15px;*/
-    font-size: 1.2vw;
+    font-size: 18px;
+    /*font-size: 1.2vw;*/
     color: lightgrey; 
 }
 
@@ -103,9 +103,14 @@ div.identifiants div {
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     font-size: 0.8rem;
+    transition: background-color 0.3s ease-in-out,
+                border 0.3s ease-in-out ;
 }
 .navbar-nav li:hover {
-    background-color: rgb(0, 127, 139);
+    /*background-color: rgb(0, 127, 139);*/
+    background: linear-gradient(rgb(0, 154, 154), rgb(0, 77, 77));
+    border : solid 0.1rem;
+    border-color:rgb(0,0,0);
 }
 
 .navbar a {
@@ -127,9 +132,11 @@ svg {
     background-color: darkcyan;
     border: solid 0.4rem;
     border-color: black;
+    transition: background-color 0.3s ease-in-out;
 }
 .accordion:hover {
-    background-color: rgb(0, 127, 139);
+    /*background-color: rgb(0, 127, 139);*/
+    background: linear-gradient(rgb(0, 154, 154), rgb(0, 77, 77));
 }
 .accordion-title {
     margin-left: 5rem;
@@ -160,4 +167,8 @@ svg {
 
 .resize {
     width: 70%;
+}
+
+li a {
+    text-decoration: none;
 }
