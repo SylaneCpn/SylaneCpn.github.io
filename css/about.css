@@ -15,9 +15,9 @@ article {
 
 
 img.face {
-    height: 60vh;
+    height: 60vw;
     margin: auto;
-    /*display: block;*/
+    display: block;
     border : solid 0.4rem;
     border-color: black;
 }
