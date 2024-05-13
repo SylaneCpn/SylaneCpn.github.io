@@ -157,3 +157,7 @@ svg {
 .img_row {
     display: flex;
 }
+
+.resize {
+    width: 70%;
+}
