@@ -3,8 +3,9 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-    font-size: 18px;
+    /*font-size: 18px;*/
     /*font-size: 1.2vw;*/
+    font-size: 1.25vw;
     color: lightgrey; 
 }
 
