@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/ecole.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +68,7 @@
              <div class="accordion-content">
                  <p>Communication de différents capteurs controllés par des cartes STM32,reliés en liaison CAN (Controller Area Network) à un IHM permettant à un opérateur de visualiser les valeurs.</p>
                  <p>Le but du projet est de configurer un ensemble de micro-contrôleurs sur lesquels se trouvent différents capteurs (température, luminosité, pression atmosphérique, gyroscope, etc...) et de les relier 
-                    ensemble dans un réseau de bus CAN (Controller Area Network). Les cartes sont interrogés par un IHM qui envoie des requêtes puis récupère les réponses et affiche les données.
+                    ensemble dans un réseau de bus CAN (Controller Area Network). Les cartes sont interrogés par une IHM qui envoie des requêtes puis récupère les réponses et affiche les données.
                  </p>
                  <p><a href="https://web.enib.fr/~kerhoas/rescapt_cours_index.html" target="_blank">Plus d'infos ici</a></p>
                  <div class="img_box">
@@ -85,7 +86,7 @@
                     la température cible atteigne la température de commande. Un micro-contrôleur avait pour but de contôler l'asservissement et de gérer la logique
                     de la carte. Le reste des composants avaient pour rôle de fournir des fonctions suppléméntaires au micro-contrôleur (filtre, capteurs de température).
                 </p>
-                <p>Le système asservi était contrôlé par un IHM qui devait à la fois fois fournir un signal de commande à la carte mais aussi afficher un graphique montrant l'évolution de 
+                <p>Le système asservi était contrôlé par une IHM qui devait à la fois fois fournir un signal de commande à la carte mais aussi afficher un graphique montrant l'évolution de 
                     la température. La carte à été modélisé sur le logiciel Eagle, l'IHM à été fait en Python et la logique du micro-contrôleur à été écrite en C.
                 </p>
                  <div class="img_box">
@@ -109,8 +110,8 @@
 
                  <div class="img_box">
                     <div class="img_row">
-                        <img src="img/crevettes.png" style ="width : 40%;" ></img>
-                        <img src="img/crevettes_c.png" style ="width : 40%;" ></img>
+                        <img src="img/crevettes.png" style ="width : 30%;" ></img>
+                        <img src="img/crevettes_c.png" style ="width : 30%;" ></img>
                     </div> 
                     <p class = "legend">Une image où les crevettes ont été identifié et labellisé</p>
                 </div>
@@ -138,7 +139,7 @@
                  </p>
                  <p>Le choix du sujet devait respecter le theme "course". J'ai choisi de créer un jeu original <span style="font-style: italic;">"Monster Runner"</span>.
                 Le principe est le suivant :</p>
-                <ul>
+                <ul class = "descript">
                     <li>Un terrain est créé sur le terminal</li>
                     <li>Le joueur apparait avec un certain nombre de vies défini à gauche du terrain, son but est de rejoindre le côte droit du terrain le plus vite possible</li>
                     <li>Le terrain est truffé de monstres qui se déplace de ma même manière que le joueur.</li>

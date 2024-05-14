@@ -3,9 +3,8 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-    /*font-size: 18px;*/
-    /*font-size: 1.2vw;*/
-    font-size: 1.25vw;
+    font-size: 18px;
+    /* font-size: 1.25vw; */
     color: lightgrey; 
 }
 
@@ -42,7 +41,7 @@ h1.Title {
     border-right: 0;
     /*border-color:rgb(0,0,0);
     color: rgb(30,30,30);*/
-    color:darkcyan ;
+    color:rgb(0, 182, 182) ;
     margin-top: 8rem;
 }
 
@@ -86,8 +85,8 @@ div.identifiants div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 2%;
-    margin-left: 2%;
+    /* margin-right: 2%; */
+    /* margin-left: 2%; */
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -96,16 +95,17 @@ div.identifiants div {
 }
 
 .navbar-nav li {
-    /*padding: auto;
-    margin-left: 8%;
-    margin-right:8% ;*/
-    padding-left: 8%;
-    padding-right: 8%;
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right:auto ; */
+    padding-left: 6%;
+    padding-right: 6%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-    font-size: 0.8rem;
+    font-size: 1.6vw;
     transition: background-color 0.3s ease-in-out,
-                border 0.3s ease-in-out ;
+                border 0.3s ease-in-out,
+                backgroung 0.3s ease-in-out ;
 }
 .navbar-nav li:hover {
     /*background-color: rgb(0, 127, 139);*/
@@ -129,11 +129,12 @@ svg {
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
     background-color: darkcyan;
     border: solid 0.4rem;
     border-color: black;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ,
+                display 0.3s;
 }
 .accordion:hover {
     /*background-color: rgb(0, 127, 139);*/
@@ -167,7 +168,7 @@ svg {
 }
 
 .resize {
-    width: 70%;
+    width: 50%;
 }
 
 li a {
