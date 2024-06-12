@@ -12,7 +12,7 @@ img.face {
 div.presentation {
     display: flex; /* Utilisation de Flexbox */
     flex-direction: row;
-    background-color: rgb(0, 121, 121);
+    background-color: var(--primary);
     border : solid 0.4rem;
     border-left: 0;
     border-right: 0;
