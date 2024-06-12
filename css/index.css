@@ -4,13 +4,15 @@ h2.Title {
 }
 
 img.face {
-    width: 30vw; /* Ajustez la largeur de l'image selon vos besoins */
+    max-width: 45%;
     margin: auto;
+    margin-right: 2rem;
+    border-radius: 50%;
 }
 
 
 div.presentation {
-    display: flex; /* Utilisation de Flexbox */
+    display: flex; 
     flex-direction: row;
     background-color: var(--primary);
     border : solid 0.4rem;
@@ -28,13 +30,13 @@ div.presentation:hover{
 }
 
 div.presentation article {
-    text-align: center;
+    /* text-align: center; */
     /*
     margin-left: 4rem;
     margin-right: 4rem;*/
     display: block;
     margin: auto;
-    font-size: 1.25vw;
+    /* font-size: 1.25vw; */
 
     
 }

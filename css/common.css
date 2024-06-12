@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1.Title {
-    text-align: center; /* Centre le texte horizontalement */
+    text-align: center;
     /*background-color: darkcyan;
     border : solid 0.4rem;*/
     border-left: 0;
@@ -53,7 +53,7 @@ a:link {
 }
 
 a:visited {
-    color : rgb(153, 255, 51);
+    color : rgb(61, 255, 51);
 }
 
 div.contact {
