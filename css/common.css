@@ -1,8 +1,11 @@
 :root {
+    --primary : rgb(11,114,97);
+    --secondary : rgb(30,30,30);
+    --black : rgb(0,0,0);
     font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     font-size: 18px;
     /* font-size: 1.25vw; */
     color: lightgrey; 
@@ -16,7 +19,7 @@
 
 
 body {
-    background-color: rgb(30,30,30);
+    background-color: var(--secondary);
 }
 
 body::-webkit-scrollbar {
@@ -24,13 +27,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(0,0,0);
+    background: var(--black);
 }
 body::-webkit-scrollbar-thumb {
-    background: darkcyan;
+    background: var(--primary);
 }
 .Title {
-    color: rgb(0, 182, 182);
+    color: var(--primary);
 }
 
 h1.Title {
@@ -41,7 +44,7 @@ h1.Title {
     border-right: 0;
     /*border-color:rgb(0,0,0);
     color: rgb(30,30,30);*/
-    color:rgb(0, 182, 182) ;
+    color: var(--primary) ;
     margin-top: 8rem;
 }
 
@@ -71,11 +74,11 @@ div.identifiants div {
     z-index: 1;
     top: 0;
     width: 100%;
-    background-color: darkcyan;
+    background-color: var(--primary);
     border : solid 0.4rem;
     border-left: 0;
     border-right: 0;
-    border-color:rgb(0,0,0);
+    border-color:var(--black);
 
 }
 
@@ -111,16 +114,16 @@ div.identifiants div {
     /*background-color: rgb(0, 127, 139);*/
     background: linear-gradient(rgb(0, 182, 182), rgb(0, 77, 77));
     border : solid 0.1rem;
-    border-color:rgb(0,0,0);
+    border-color: var(--black);
 }
 
 .navbar a {
-    color : rgb(30,30,30);
+    color : var(--secondary) ;
 }
 
 svg {
     margin-left: 1rem;
-    fill: darkcyan;
+    fill: var(--primary);
 }
 .accordion {
     /*margin-top: 5rem;
@@ -130,7 +133,7 @@ svg {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    background-color: darkcyan;
+    background-color: var(--primary);
     border: solid 0.4rem;
     border-color: black;
     transition: background-color 0.3s ,
@@ -144,7 +147,7 @@ svg {
     margin-left: 5rem;
     margin-right: 5rem;
     cursor: pointer;
-    color: rgb(30,30,30);
+    color: var(--secondary);
 }
 .accordion-content {
     display: none;
