@@ -48,7 +48,13 @@ h1.Title {
     margin-top: 8rem;
 }
 
+a:link {
+    color : rgb(153, 255, 102);
+}
 
+a:visited {
+    color : rgb(153, 255, 51);
+}
 
 div.contact {
 
