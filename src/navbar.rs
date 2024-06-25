@@ -26,10 +26,13 @@ pub fn Navbar() -> Element {
         // link { rel: "stylesheet", href: "navbar.css" }
         div {class : "extended_nav",
             nav { class : "navbar",
-                div { class : "links" ,
-                    Links {}
+                img {class : "logo" , src : "img/pics/logo.png"}
+                div {class : "navbar_content",
+                    div { class : "links" ,
+                        Links {}
+                    }
+                    img {class : "svg" , src : "img/pics/hamburger.svg" , onclick : move |_| extended.toggle()}
                 }
-                img {class : "svg" , src : "img/pics/hamburger.svg" , onclick : move |_| extended.toggle()}
                 
             
             

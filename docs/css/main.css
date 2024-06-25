@@ -11,10 +11,21 @@ body {
     
 }
 
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--primary_color);
+}
+
 #main
 {
     margin:  auto;
-    margin-top: 45px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +89,6 @@ code {
 @media (max-width: 700px) {
     
     #main {
-        width: 90%;
+        width: 95%;
     }
 }

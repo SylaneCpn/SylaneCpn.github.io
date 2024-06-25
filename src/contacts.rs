@@ -11,7 +11,7 @@ pub fn Contacts() -> Element {
                         p {"Email"}
                         img{ src : "img/pics/mail.svg"} 
                     }
-                    a {href  : "" , "s0campan@enib.fr"}
+                    a {href  : "mailto:sylanecampan@gmail.com" , "s0campan@enib.fr"}
                 }
 
                 div { class : "c_item",
@@ -19,7 +19,7 @@ pub fn Contacts() -> Element {
                         p {"LinkedIn"}
                         img{ src : "img/pics/linked_in.svg"} 
                     }
-                    a { href : "", "sylane-campan"}
+                    a { href : "https://linkedin.com/in/sylane-campan-6bb56a230", "sylane-campan"}
                 }
 
                 div { class : "c_item",
@@ -27,7 +27,7 @@ pub fn Contacts() -> Element {
                         p {"Github"}
                         img{ src : "img/pics/github.svg"} 
                     }
-                    a { href : "", "SylaneCpn"}
+                    a { href : "https://github.com/sylanecpn", "SylaneCpn"}
                 }
 
             }
