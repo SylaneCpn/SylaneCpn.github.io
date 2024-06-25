@@ -1,4 +1,4 @@
-Conception d'une application permettant de socker et modifier des photos sur un server hébergé sur Raspberry Py. Avec le backend écrit en Rust.
+Conception d'une application permettant de socker et modifier des fichiers sur un server hébergé sur Raspberry Py. Avec le backend écrit en Rust.
 
 Pour celà je souhaite héberger un serveur web qui fournira dynamiquement des pages HTML contenant les fichiers/photos stockés sur le serveur. Le serveur possèdera un système d'authentification afin de gérer les droits des donées du serveur.
 
