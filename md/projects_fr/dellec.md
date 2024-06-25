@@ -1,0 +1,3 @@
+Prestation musicale course de caisse à savon Plouzané.
+
+En 2023, à l'occasion de la première édition du "Dellec en caisse", une course de caisses à savon organisée dans le cadre du projet IHH ENIB, les organisateurs ont mis en place une mini concert où chacun pouvait jouer comme il le voulait. Avec quelques collègues de l'ENIB , nous avons interprété "Wonderwall" de Oasis et "Boulevard of Broken Dreams" de Greenday.

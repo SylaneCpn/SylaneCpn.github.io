@@ -1,0 +1,28 @@
+.box {
+    width: 100%;
+    border: 1px var(--gradient_color) solid;
+    background-color: var(--bg);
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.box:hover {
+    background:  linear-gradient(135deg, var(--bg) 60%, var(--gradient_color));
+}
+
+.box_title {
+    text-align: start;
+    color: var(--gradient_color);
+    margin-left: 20px;
+}
+
+.box_content {
+    text-align: start;
+    /* color: var(--bg); */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

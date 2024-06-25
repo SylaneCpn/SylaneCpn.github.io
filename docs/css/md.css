@@ -1,0 +1,36 @@
+/*photo = text on the side css*/
+em {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.photo_text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5%;
+    transition: background-color 1s ease-in-out;
+
+}
+
+ .photo_text:hover{
+    background: linear-gradient(135deg, var(--bg) 60%, var(--primary_color));
+} 
+
+
+.photo_text img {
+
+    margin: 40px;
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 700px) {
+    .photo_text {
+        display: block;
+    }
+}
