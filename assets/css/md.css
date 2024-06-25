@@ -13,13 +13,11 @@ em {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5%;
-    transition: background-color 1s ease-in-out;
+    background: linear-gradient(135deg, var(--bg) 60%, var(--primary_color));
 
 }
 
- .photo_text:hover{
-    background: linear-gradient(135deg, var(--bg) 60%, var(--primary_color));
-} 
+
 
 
 .photo_text img {

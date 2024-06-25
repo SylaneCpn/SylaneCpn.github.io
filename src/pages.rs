@@ -70,7 +70,7 @@ pub fn School() -> Element {
         Box {title : "Monster Runner" , children : rsx! {Md {content : include_str!("../md/school_fr/IPI.md")}}}
         h2 {"Stages"}
         Box {title : "BLUE SOLUTIONS 2023" , children : rsx! {Md {content : include_str!("../md/school_fr/BS2023.md")}}}
-        Box {title : "AENAG 2022" , children : rsx! {Md {content : include_str!("../md/school_fr/ENAG2022.md")}}}
+        Box {title : "ENAG 2022" , children : rsx! {Md {content : include_str!("../md/school_fr/ENAG2022.md")}}}
         h2 {"Autres"}
         Box {title : "Projet IHH-Warming Slate" , children : rsx! {Md {content : include_str!("../md/school_fr/IHH.md")}}}
         Contacts {}
@@ -83,6 +83,10 @@ pub fn Blog() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/blog_fr.md")}
+        Box {title : "Rendre Python plus performant avec du C ou du Rust" , children : rsx! {Md {content : include_str!("../md/blog_fr/opt_python.md")}}}
+        Box {title : "Compiler son projet C sans makefile" , children : rsx! {Md {content : include_str!("../md/blog_fr/simple_c.md")}}}
+        Box {title : "Un script Python pour aproximer une fonction en connaissant quelques points" , children : rsx! {Md {content : include_str!("../md/blog_fr/aprox_python.md")}}}
+        Box {title : "Comment ce site est fait ?" , children : rsx! {Md {content : include_str!("../md/blog_fr/how_it_is_made.md")}}}
         Contacts {}
     }
 }
