@@ -1,16 +1,16 @@
-Un des pricipaux problèmes que j'ai avec l'écriture de programme en C ou en C++ est la compilation.
+Un des pricipaux problèmes que j'ai avec l'écriture de programmes en C ou en C++ est la compilation.
 Compiler en programme simple c'est facile. Mais dès lors qu'il y a plusieurs modules, la compilation devient vite fastidieuse avec
-autant de commande à saisir dans le terminal que de module à compilier. 
+autant de commandes à saisir dans le terminal que de module à compilier. 
 
 Une approche pour palier à cette difficulté est d'écrire un makefile qui fera compilera avec la commande `make` tous les fichiers sources nécessaires.  
-C'est l'approche la plus efficace dans le cas de gros projets. Mais malheureusement ces makefile ne sont pas facile à écrire et comporte des difficultés qui ne sont pas simple à surmonter pour les débutants ou les programmeurs manquant de familiarité avec le language.
+C'est l'approche la plus efficace dans le cas de gros projets. Mais malheureusement ces makefile ne sont pas facile à écrire et comporte des difficultés qui ne sont pas simple à surmonter pour les débutants et les programmeurs manquant de familiarité avec le language.
 
-C'est ici qu'intervient la Single Compilation Unit qui permet de fabriquer un executable et un invoquant une unique fois le compilateur. Le plus beau avec cette technique c'est quelles est incroyablement simple à mettre en place.  
-Elle consiste simplement à regrouper tous nos fichier `.c` dans un nouveau fichier source.
+C'est ici qu'intervient la Single Compilation Unit qui permet de fabriquer un executable et un invoquant une unique fois le compilateur. Le plus beau avec cette technique c'est qu'elle est incroyablement simple à mettre en place.  
+Elle consiste simplement à regrouper tous nos fichiers `.c` dans un nouveau fichier source.
 
 Nous allons illustrer ça par un exemple :
 
-Imaginons les fichier `foo.c` , `bar.c` , `baz.c` qui sont nos modules et leurs fichiers d'en-tête respectifs `foo.h` , `bar.h` , `baz.h`ayant les contenus suivants:
+Imaginons les fichiers `foo.c` , `bar.c` , `baz.c` qui sont nos modules, et leurs fichiers d'en-tête respectifs `foo.h` , `bar.h` , `baz.h` ayant les contenus suivants:
 
 ```c
 // foo.c
@@ -84,7 +84,7 @@ baz(void);
 
 #endif
 ```
-Créons maintenant un fichier `prog.c` qui appelle rous nos modules :
+Créons maintenant un fichier `prog.c` qui appelle tous nos modules :
 
 ```c
 // prog.c
@@ -94,7 +94,7 @@ Créons maintenant un fichier `prog.c` qui appelle rous nos modules :
 #include "baz.h"
 
 int
-main() {
+main(void) {
     foo();
     bar();
     baz();
@@ -127,14 +127,15 @@ et hop ! L'exécutable `main` est apparu.
 en l'excutant avec `./main` nous obtenons dans le terminal :
 
 ```
-called foo
-called bar
-called baz
+
+    called foo
+    called bar
+    called baz
 
 ```
 
-Le programme s'est compilé et déroulé sans encombres !
-Et en deux lignes de commande. Il est désormais bien plus facile de compiler son code sources.
+Le programme s'est compilé et déroulé sans encombre !
+Et en deux lignes de commande ! Il est désormais bien plus facile de compiler son code source.
 
-Attention cepandant cette technique nécessite que votre machine ait assez de mémoire pour pouvoir compiler tous les fichiers d'un coup !
+Attention cepandant, cette technique nécessite que votre machine ait assez de mémoire pour pouvoir compiler tous les fichiers d'un coup !
 Il vaut mieux éviter cette méthode pour les gros projets.

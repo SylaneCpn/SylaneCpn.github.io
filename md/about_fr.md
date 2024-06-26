@@ -18,7 +18,7 @@ Après avoir obtenu mon brevet des collèges, je quitte la Guadeloupe et je pars
 
 Je choisi de poursuivre mes études supérieur à l’ENIB, je suis allé vers des études d’ingénieur suite à mon goût des mathématiques et des sciences en général ainsi que grace à l’excellent accueil des étudiants de l’ENIB au forum Azimut de Brest.
 
-A l’heure actuelle, je termine ma quatrième année année et si tout se passe bien l’année scolaire 2025-2026 sera la dernière avant d’être diplômé. J'entame une nouvelle étape de ma vie et de mes études puisque je pars étudier au Québec à l'Unversité de Sherbrooke en Août accompagné de ma merveilleuse copine qui à décidé de tout lâcher pour m'accompagner.
+A l’heure actuelle, je termine ma quatrième année année et si tout se passe bien l’année scolaire 2025-2026 sera la dernière avant d’être diplômé. J'entame une nouvelle étape de ma vie et de mes études puisque je pars étudier au Québec à l'Unversité de Sherbrooke en Août accompagné de ma merveilleuse petite amie qui à decidé de me suivre.
 
 ## Qu'est ce que j'aime ?
 

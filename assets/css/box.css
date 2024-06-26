@@ -9,7 +9,7 @@
 
 }
 
-.box:hover {
+.box_title:hover {
     background:  linear-gradient(135deg, var(--bg) 60%, var(--gradient_color));
 }
 

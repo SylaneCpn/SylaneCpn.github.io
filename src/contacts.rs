@@ -11,7 +11,7 @@ pub fn Contacts() -> Element {
                         p {"Email"}
                         img{ src : "img/pics/mail.svg"} 
                     }
-                    a {href  : "mailto:sylanecampan@gmail.com" , "s0campan@enib.fr"}
+                    a {href  : "mailto:sylanecampan@gmail.com" , "sylane.campan@gmail.com"}
                 }
 
                 div { class : "c_item",
