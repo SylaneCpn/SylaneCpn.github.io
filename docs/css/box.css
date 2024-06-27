@@ -1,6 +1,7 @@
 .box {
     width: 100%;
     border: 1px var(--gradient_color) solid;
+    border-radius : 0.5em;
     background-color: var(--bg);
     cursor: pointer;
     transition: background-color 1s ease-in-out;
