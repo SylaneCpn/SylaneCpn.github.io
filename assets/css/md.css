@@ -32,3 +32,25 @@ em {
         display: block;
     }
 }
+
+
+/*resume*/
+
+
+.case {
+    border: 1px var(--primary_color);
+    border-radius: 0.5em;
+    background: linear-gradient(135deg, var(--bg) 60%, var(--primary_color));
+    margin: 20px;
+
+
+}
+
+.case strong {
+
+    margin-right: 40px;
+    color: var(--gradient_color);
+
+}
+
+
