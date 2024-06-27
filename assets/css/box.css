@@ -3,21 +3,27 @@
     border: 1px var(--gradient_color) solid;
     border-radius : 0.5em;
     background-color: var(--bg);
-    cursor: pointer;
     transition: background-color 1s ease-in-out;
     margin-top: 30px;
     margin-bottom: 30px;
 
 }
 
-.box:hover {
+.box_title:hover {
     background:  linear-gradient(135deg, var(--bg) 60%, var(--gradient_color));
+    
 }
 
 .box_title {
-    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
     color: var(--gradient_color);
-    margin-left: 20px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 0;
 }
 
 .box_content {
