@@ -17,4 +17,4 @@ Le principe est le suivant :
 * Les niveaux deviennent de plus en plus diffice.
 * La partie se termine quand le joueur n'a plus de vie, son score est alors enregistré.
 
-Malheuresemnt le code souce du jeu à été perdu, il n'est plus possible d'y jouer :(
+Malheuresement le code souce du jeu à été perdu, il n'est plus possible d'y jouer :(
