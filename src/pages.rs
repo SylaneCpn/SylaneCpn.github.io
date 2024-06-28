@@ -5,6 +5,7 @@ use crate::md::Md;
 use crate::navbar::Navbar;
 use crate::contacts::Contacts;
 use crate::boxs::Box;
+use crate::Route;
 
 
 //##############################################################
@@ -87,6 +88,21 @@ pub fn Blog() -> Element {
         Box {title : "Compiler son projet C sans makefile" , children : rsx! {Md {content : include_str!("../md/blog_fr/simple_c.md")}}}
         Box {title : "Un script Python pour aproximer une fonction en connaissant quelques points" , children : rsx! {Md {content : include_str!("../md/blog_fr/aprox_python.md")}}}
         Box {title : "Comment ce site est fait ?" , children : rsx! {Md {content : include_str!("../md/blog_fr/how_it_is_made.md")}}}
+        Contacts {}
+    }
+}
+
+#[component]
+pub fn PageNotFound(route : Vec<String>) -> Element {
+    let mut  path : String = route.into_iter().map(|x| format!("{}/",x)).collect();
+    path.pop();
+    rsx! {
+        Navbar{}
+
+        h1{"Page Introuvable"}
+        h2{"La page \"{path}\" n'exite pas !"}
+        Link {to: Route::Home{} , "Revenez à l'accueil."}
+        
         Contacts {}
     }
 }

@@ -22,7 +22,9 @@ enum Route {
     #[route("/school")]
     School {},
     #[route("/blog")]
-    Blog{}
+    Blog{},
+    #[route("/:..route")]
+    PageNotFound { route: Vec<String> },
 }
 
 

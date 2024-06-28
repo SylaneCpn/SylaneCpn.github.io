@@ -89,6 +89,9 @@ code {
     background-color: rgb(10,10,10);
     color: var(--code);
     font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono' , monospace;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 pre code {

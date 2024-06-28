@@ -87,6 +87,8 @@
     </div>
 
     <div class="case">
-    ## En contruction...
+## En construction...
+
+Revenez plus tard !
     <div>
 </div>
