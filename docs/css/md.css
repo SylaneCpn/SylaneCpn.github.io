@@ -38,19 +38,24 @@ em {
 
 
 .case {
-    border: 1px var(--primary_color);
+    border: var(--primary_color) 1px solid;
     border-radius: 0.5em;
-    background: linear-gradient(135deg, var(--bg) 60%, var(--primary_color));
-    margin: 20px;
+    background: var(--bgg);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 
 }
 
 .case strong {
 
-    margin-right: 40px;
-    color: var(--gradient_color);
+    
+    color: var(--primary_color);
 
+}
+.case h2 {
+    color : var(--primary_color);
 }
 
 

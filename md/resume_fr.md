@@ -74,9 +74,9 @@
 
 **Langues**
 
-* Anglais (Expérience professionelle complête)
+* Anglais (Compétence professionelle complête)
 
-* Espagnol ( Compétence professionelle limitée)
+* Espagnol (Compétence professionelle limitée)
 
 **Autres** 
 
@@ -87,8 +87,6 @@
     </div>
 
     <div class="case">
-
+    ## En contruction...
     <div>
 </div>
-
-En construction...
