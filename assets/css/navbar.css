@@ -4,14 +4,10 @@
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: var(--bg); 
+    background-color: rgba(30,30,30,0.4);
+    backdrop-filter: blur(15px);
     border-bottom:1px var(--secondary_color) solid;
-    
-
-
-
-
-    
+      
 }
 
 nav {
