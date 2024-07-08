@@ -100,8 +100,8 @@ pub fn PageNotFound(route : Vec<String>) -> Element {
         Navbar{}
 
         h1{"Page Introuvable"}
-        h2{ style : "margin: 100px;" , La page \"{path}\" n'exite pas !"}
-        Link {to: Route::Home{} , "Revenez à l'accueil."}
+        h2{La page \"{path}\" n'exite pas !"}
+        Link {to: Route::Home{} ,  style : "margin: 100px;" ,  "Revenez à l'accueil."}
         
         Contacts {}
     }
