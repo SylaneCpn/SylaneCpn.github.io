@@ -13,7 +13,7 @@
     flex-direction: row;
     width: 100%;
     border-radius: 0.5em; 
-    background: linear-gradient(140deg, var(--bg) 45%, var(--primary_color));
+    background: linear-gradient(140deg, var(--bg) 55%, var(--primary_color));
 }
 .c_item {
     margin: 20px;
