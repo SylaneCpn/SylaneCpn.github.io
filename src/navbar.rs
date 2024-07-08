@@ -6,7 +6,7 @@ use crate::Route;
 pub fn Links() -> Element {
 
     rsx! {
-        Link {to : Route::Home{} , "Acceuil"}
+        Link {to : Route::Home{} , "Accueil"}
         Link {to : Route::Resume{} , "CV"}
         Link {to : Route::School{} , "Ecole"}
         Link {to : Route::Projects{} , "Projets"}
