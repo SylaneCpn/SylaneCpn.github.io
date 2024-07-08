@@ -1,9 +1,9 @@
 :root {
     --bg: rgb(30, 30, 30);
     --bgg : rgb(35,35,35);
-    --primary_color : rgb(11, 111, 69);
+    --primary_color : rgb(16, 159, 99);
     --secondary_color: rgb(220, 220, 220);
-    --gradient_color : rgb(11,114,97);
+    --gradient_color : rgb(21, 132, 212);
     --code : #bf00ff;
     font-family: "Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;
     /* font-size: large; */
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    /* align-items: center;  */
     /* font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono' , monospace; */
     color : var(--secondary_color) ;
     width: 65%;
@@ -53,19 +53,19 @@ img {
 
 h1 {
     color: var(--primary_color);
-    width: 100%;
+    width : available;
     text-align: center;
 }
 
 h2 {
     color: var(--primary_color);
-    width: 100%;
+    width: available;
     
 }
 
 h3 {
     color: var(--primary_color);
-    width: 100%;
+    width: available;
 }
 
 a {
@@ -96,6 +96,7 @@ code {
 
 pre code {
     color: white;
+    background-color: black;
 
 }
 

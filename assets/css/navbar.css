@@ -4,9 +4,9 @@
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(30,30,30,0.4);
+    background-color: rgba(30,30,30,0.75);
     backdrop-filter: blur(15px);
-    border-bottom:1px var(--secondary_color) solid;
+    border-bottom:1px var(--primary_color) solid;
       
 }
 
@@ -54,14 +54,14 @@ nav {
 
 .links a {
     text-decoration: none;
-    color: var(--secondary_color);
+    color: var(--primary_color);
     margin-top: 1rem ;
     margin-bottom: 1rem;
     transition: all 1s;
 }
 
 .links a:hover {
-    color: var(--primary_color); 
+    color: var(--gradient_color); 
     
 
 }
@@ -112,7 +112,7 @@ nav {
     }
     
     .extended a {
-        color :var(--secondary_color);
+        /* color :var(--secondary_color); */
         text-decoration: none;
         transition: all 1s;
     
@@ -120,7 +120,7 @@ nav {
     .extended a:hover {
     
         
-        color : var(--primary_color) ;
+        /* color : var(--primary_color) ; */
         cursor : pointer;
     
     }
