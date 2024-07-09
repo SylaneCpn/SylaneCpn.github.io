@@ -63,7 +63,7 @@
 
 2. Electronique 
 
-    * Système embarqué 
+    * Systèmes embarqués 
 
     * LTSPICE
 
@@ -90,5 +90,5 @@
 ## En construction...
 
 Revenez plus tard !
-    <div>
+    </div>
 </div>
