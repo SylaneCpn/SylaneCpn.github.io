@@ -1,6 +1,6 @@
 :root {
-    --bg: rgb(30, 30, 30);
-    --bgg : rgb(35,35,35);
+    --bg: rgb(0, 0, 0);
+    --bgg : rgb(30,30,30);
     --primary_color : rgb(16, 159, 99);
     --secondary_color: rgb(220, 220, 220);
     --gradient_color : rgb(21, 132, 212);

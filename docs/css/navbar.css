@@ -4,7 +4,7 @@
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(30,30,30,0.75);
+    background-color: rgba(0,0,0,0.75);
     backdrop-filter: blur(15px);
     border-bottom:1px var(--primary_color) solid;
       
@@ -13,7 +13,7 @@
 nav {
 
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     width: 100vw;
     height: auto;
@@ -25,19 +25,25 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    min-width: 55%;
+    min-width: 70%;
     
 }
 
 .logo {
     height: 45px;
     width: auto;
-    margin: 0;
-    margin-right: 30%;
+    margin: auto;
+    /* margin-right: 30%;
     margin-top: 0.5%;
-    margin-bottom: 0.5%;
-}
+    margin-bottom: 0.5%; */
+    border-radius: 0;
+    max-width: none;
+} 
 
+.navbar a {
+    margin-left: 20px;
+    margin-right: auto;
+} 
 
 
 

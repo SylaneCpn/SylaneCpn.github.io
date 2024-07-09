@@ -26,7 +26,7 @@ pub fn Navbar() -> Element {
         // link { rel: "stylesheet", href: "navbar.css" }
         div {class : "extended_nav",
             nav { class : "navbar",
-                img {class : "logo" , src : "img/pics/logo.png"}
+                Link {to : Route::Home{} , img {class : "logo" , src : "img/pics/logo.png"}}
                 div {class : "navbar_content",
                     div { class : "links" ,
                         Links {}
