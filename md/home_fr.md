@@ -5,7 +5,7 @@
 <div class="txt">
 
 ## Qui suis-je ?
-Je m'appelle Sylane Campan, je suis actuellement étudiant en 4ème année à l'Ecole Nationale d'Ingénieur de Brest.
+Je m'appelle Sylane Campan, je suis actuellement étudiant en 4ème année à l'Ecole Nationale d'Ingénieurs de Brest.
 
 J'ai créé ce site afin de répertorier différentes informations sur moi et ma formation. Le but étant d'avoir un aperçu de ce que je peux faire en developpement web mais aussi d'avoir un endroit pour pouvoir montrer mes expériences et mes compétences. Je souhaite à la fois garder une trace de ce que j'entreprends tout en ayant une page qui me ressemble.
 
