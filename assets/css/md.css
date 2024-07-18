@@ -22,12 +22,16 @@ em {
 
 .photo_text img {
 
-    margin: 40px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: auto;
     border-radius: 50%;
     
 }
 .photo_text .txt {
     padding: 2px;
+    margin: 20px;
 }
 
 @media (max-width: 700px) {
