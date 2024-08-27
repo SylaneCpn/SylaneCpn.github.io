@@ -69,6 +69,11 @@ pub fn School() -> Element {
         Box {title : "Traitement d'images" , children : rsx! {Md {content : include_str!("../md/school_fr/img.md")}}}
         Box {title : "Recycl'ENIB" , children : rsx! {Md {content : include_str!("../md/school_fr/cpo.md")}}}
         Box {title : "Monster Runner" , children : rsx! {Md {content : include_str!("../md/school_fr/IPI.md")}}}
+        h2 { "Cursus Université de Sherbrooke"}
+        Box {title : "Acoustique fondamentale" , children : rsx! {Md {content : include_str!("../md/canada/acoustic.md")}}}
+        Box {title : "Méthode des éléments finis" , children : rsx! {Md {content : include_str!("../md/canada/finite_elements.md")}}}
+        Box {title : "Contrôle actif de bruits et vibrations" , children : rsx! {Md {content : include_str!("../md/canada/noise_waves.md")}}}
+        Box {title : "Turbulences : Modélisation et expérimentations" , children : rsx! {Md {content : include_str!("../md/canada/turbulences.md")}}}
         h2 {"Stages"}
         Box {title : "BLUE SOLUTIONS 2023" , children : rsx! {Md {content : include_str!("../md/school_fr/BS2023.md")}}}
         Box {title : "ENAG 2022" , children : rsx! {Md {content : include_str!("../md/school_fr/ENAG2022.md")}}}
