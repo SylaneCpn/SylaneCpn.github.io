@@ -25,13 +25,13 @@
 
     * Git
 
-    * Programation système 
+    * Programmation système 
 
-    * Developpement Web
+    * Développement Web
 
     * POO
 
-    * Languages :
+    * Langages :
 
         * C
 
@@ -69,7 +69,6 @@
 
     * VHDL
 
-    * OpenCV
 
 
 **Langues**
