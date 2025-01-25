@@ -1,11 +1,11 @@
-Un des pricipaux problèmes que j'ai avec l'écriture de programmes en C ou en C++ est la compilation.
+Un des principaux problèmes que j'ai avec l'écriture de programmes en C ou en C++ est la compilation.
 Compiler en programme simple c'est facile. Mais dès lors qu'il y a plusieurs modules, la compilation devient vite fastidieuse avec
-autant de commandes à saisir dans le terminal que de module à compilier. 
+Autant de commandes à saisir dans le terminal que de module à compiler. 
 
 Une approche pour palier à cette difficulté est d'écrire un makefile qui fera compilera avec la commande `make` tous les fichiers sources nécessaires.  
-C'est l'approche la plus efficace dans le cas de gros projets. Mais malheureusement ces makefile ne sont pas facile à écrire et comporte des difficultés qui ne sont pas simple à surmonter pour les débutants et les programmeurs manquant de familiarité avec le language.
+C'est l'approche la plus efficace dans le cas de gros projets. Mais malheureusement ces makefile ne sont pas facile à écrire et comporte des difficultés qui ne sont pas simple à surmonter pour les débutants et les programmeurs manquant de familiarité avec le langage.
 
-C'est ici qu'intervient la Single Compilation Unit qui permet de fabriquer un executable et un invoquant une unique fois le compilateur. Le plus beau avec cette technique c'est qu'elle est incroyablement simple à mettre en place.  
+C'est ici qu'intervient la Single Compilation Unit qui permet de fabriquer un exécutable et un invoquant une unique fois le compilateur. Le plus beau avec cette technique c'est qu'elle est incroyablement simple à mettre en place.  
 Elle consiste simplement à regrouper tous nos fichiers `.c` dans un nouveau fichier source.
 
 Nous allons illustrer ça par un exemple :
@@ -47,7 +47,7 @@ baz(void) {
 }
 ```
 
- et les fichiers d'en-tête :
+ Et les fichiers d'en-tête :
 
 ```c
 // foo.h
@@ -102,8 +102,8 @@ main(void) {
     return 0;
 }
 ```
-En temps normal il faudrait comilier chaque fichier `.c` puis les lier à `prog.c` pour obenir un executable.
-Au lieu de ça nous allons créer un dernier fichier  `main.c` avec le contenu suivant : 
+En temps normal il faudrait compiler chaque fichier `.c` puis les lier à `prog.c` pour obtenir un exécutable.
+Au lieu de ça nous allons créer un dernier fichier `main.c` avec le contenu suivant : 
 
 ```c
 // main.c
@@ -123,8 +123,8 @@ gcc main.c -o main
 
 ```
 
-et hop ! L'exécutable `main` est apparu.
-en l'excutant avec `./main` nous obtenons dans le terminal :
+Et hop ! L'exécutable `main` est apparu.
+En l'exécutant avec `./main` nous obtenons dans le terminal :
 
 ```
 
@@ -137,5 +137,7 @@ en l'excutant avec `./main` nous obtenons dans le terminal :
 Le programme s'est compilé et déroulé sans encombre !
 Et en deux lignes de commande ! Il est désormais bien plus facile de compiler son code source.
 
-Attention cepandant, cette technique nécessite que votre machine ait assez de mémoire pour pouvoir compiler tous les fichiers d'un coup !
+Attention cependant, cette technique nécessite que votre machine ait assez de mémoire pour pouvoir compiler tous les fichiers d'un coup !
 Il vaut mieux éviter cette méthode pour les gros projets.
+
+

@@ -89,10 +89,10 @@ pub fn Blog() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/blog_fr.md")}
-        Box {title : "Rendre Python plus performant avec du C ou du Rust" , children : rsx! {Md {content : include_str!("../md/blog_fr/opt_python.md")}}}
+        // Box {title : "Rendre Python plus performant avec du C ou du Rust" , children : rsx! {Md {content : include_str!("../md/blog_fr/opt_python.md")}}}
         Box {title : "Compiler son projet C sans makefile" , children : rsx! {Md {content : include_str!("../md/blog_fr/simple_c.md")}}}
-        Box {title : "Un script Python pour aproximer une fonction en connaissant quelques points" , children : rsx! {Md {content : include_str!("../md/blog_fr/aprox_python.md")}}}
-        Box {title : "Comment ce site est fait ?" , children : rsx! {Md {content : include_str!("../md/blog_fr/how_it_is_made.md")}}}
+        // Box {title : "Un script Python pour aproximer une fonction en connaissant quelques points" , children : rsx! {Md {content : include_str!("../md/blog_fr/aprox_python.md")}}}
+        // Box {title : "Comment ce site est fait ?" , children : rsx! {Md {content : include_str!("../md/blog_fr/how_it_is_made.md")}}}
         Contacts {}
     }
 }

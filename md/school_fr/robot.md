@@ -7,6 +7,7 @@ Le robot doit pouvoir alterner entre 3 modes différents :
 * le mode tracking qui suit une cible proche d'une couleur spécifique.
 * Le mode manuel qui permet de contrôler le robot de manière libre. 
  
-Le contrôle du robot lorsqu'il est en mode manuel et le changement de mode en lui même se fait par une IHM réalisée dans le cadre du projet.
+Le contrôle du robot lorsqu'il est en mode manuel et le changement de mode en lui-même se fait par une IHM réalisée dans le cadre du projet.
 
 [Plus d'infos ici](https://web.enib.fr/~kerhoas/robot_ros_index.html)
+

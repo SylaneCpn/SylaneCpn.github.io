@@ -6,7 +6,7 @@ mod contacts;
 mod boxs;
 
 use dioxus::prelude::*;
-use tracing::Level;
+//use tracing::Level;
 use pages::*;
 
 #[derive(Clone, Routable, Debug, PartialEq)]
@@ -30,7 +30,7 @@ enum Route {
 
 fn main() {
     // Init logger
-    dioxus_logger::init(Level::INFO).expect("failed to init logger");
+    //dioxus_logger::init(Level::INFO).expect("failed to init logger");
     launch(App);
 }
 
