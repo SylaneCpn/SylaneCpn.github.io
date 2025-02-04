@@ -4,5 +4,5 @@ Le but du projet est de configurer un ensemble de microcontrôleurs sur lesquels
 
 [Plus d'infos ici](https://web.enib.fr/~kerhoas/rescapt_cours_index.html)
 
-![CAN](img/CAN.jpg)
+![CAN](/assets/img/CAN.jpg)
 _Une photo de l'IHM conçu lors du projet_

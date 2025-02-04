@@ -6,7 +6,7 @@ Le projet de fin de semestre du module consistait à traiter des images afin de 
 
 Les traitements ont été fait à partir de la bibliothèque Open CV de Python.
 
-![crevettes1](img/crevettes.png)
-![crevettes2](img/crevettes_c.png)
+![crevettes1](/assets/img/crevettes.png)
+![crevettes2](/assets/img/crevettes_c.png)
 _Une image où les crevettes ont été identifié et labellisé_
 

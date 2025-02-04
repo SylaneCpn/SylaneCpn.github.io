@@ -7,10 +7,23 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dioxus = { version = "0.6.0", features = ["router"] }
+pulldown-cmark = "0.12.2"
 
-dioxus = { version = "0.5", features = ["web", "router"] }
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
 
-# Debug
-tracing = "0.1.40"
-dioxus-logger = "0.5.0"
-pulldown-cmark = "0.11.0"
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

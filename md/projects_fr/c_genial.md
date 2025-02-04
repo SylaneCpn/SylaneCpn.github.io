@@ -6,6 +6,6 @@ Nous avons testé plusieurs expériences pour justement trouver quoi faire des s
 
 [Plus d'infos ici](https://www.sciencesalecole.org/wp-content/uploads/2016/06/CR_CGENCOLL20152016_AcaGuadeloupe.pdf)
 
-![lab](/img/cgenial.png)
+![lab](/assets/img/cgenial.png)
 _Une photo des expérimentations !_
 

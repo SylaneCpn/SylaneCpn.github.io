@@ -27,6 +27,8 @@ enum Route {
     PageNotFound { route: Vec<String> },
 }
 
+const FAVICON: Asset = asset!("/assets/favicon.ico");
+
 
 fn main() {
     // Init logger
@@ -37,8 +39,15 @@ fn main() {
 fn App() -> Element {
     rsx! {
         // link { rel: "stylesheet", href: "main.css" }
-        
+        document::Link { rel: "icon", href: FAVICON }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/main.css") }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/md.css") }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/navbar.css") }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/prism.css") }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/box.css") }
+        document::Link { rel: "stylesheet",href: asset!("./assets/css/contacts.css") }
         Router::<Route> {}
+        document::Script { src: asset!("./assets/js/prism.js") }
         
     }
 }

@@ -4,6 +4,6 @@ Pendant ma 5ème, j'ai choisi l'option "voile" proposé par mon collège qui m'a
 
 C'était une magnifique expérience qui m'a permis d'obtenir à la fin de la compétition, le titre d’» arbitre national".
 
-![poduim](img/voile.jpg)
+![poduim](/assets/img/voile.jpg)
 _Une photo des arbitres après la compétition. On peut me voir tout à droite sur la scène !_
 

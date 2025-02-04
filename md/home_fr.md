@@ -1,7 +1,7 @@
 # Accueil 
 
 <div class = photo_text>
-<img src="/img/portrait.jpg"></img>
+<img src="/assets/img/portrait.jpg"></img>
 <div class="txt">
 
 ## Qui suis-je ?

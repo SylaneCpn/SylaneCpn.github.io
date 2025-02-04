@@ -4,5 +4,5 @@ Le principe du projet était de créer un système de chauffage simple, une rés
 
 Le système asservi était contrôlé par une IHM qui devait à la fois fournir un signal de commande à la carte mais aussi afficher un graphique montrant l'évolution de la température. La carte a été modélisé sur le logiciel Eagle, l'IHM a été fait en Python et la logique du microcontrôleur a été écrite en C.
 
-![IPS](img/ips.png)
+![IPS](/assets/img/ips.png)
 _Schéma block de la structure de la carte_
