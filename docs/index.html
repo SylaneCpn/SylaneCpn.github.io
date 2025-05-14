@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page de Sylane</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/md.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/prism.css">
-<link rel="stylesheet" href="css/box.css">
-<link rel="stylesheet" href="css/contacts.css">
-
-</head>
-<body>
-  <div id="main"></div>
-  <script type="module">
-    import init from "/./assets/dioxus/sylane-website.js";
-    init("/./assets/dioxus/sylane-website_bg.wasm").then(wasm => {
-      if (wasm.__wbindgen_start == undefined) {
-        wasm.main();
-      }
-    });
-  </script>
-  <script src="js/prism.js"></script>
-
-</body>
+  <head>
+    <title>Page de Sylane</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  <link rel="preload" as="script" href="/./assets/sylane-website-be506c0027d05efc.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/./assets/sylane-website_bg-0c843f0fc52885c1.wasm" crossorigin></head>
+  <body>
+    <div id="main"></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/./assets/sylane-website-be506c0027d05efc.js").then(
+                ({ default: init }) => {
+                init("/./assets/sylane-website_bg-0c843f0fc52885c1.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
 </html>
