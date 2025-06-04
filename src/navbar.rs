@@ -31,7 +31,7 @@ pub fn Navbar() -> Element {
                     div { class : "links" ,
                         Links {}
                     }
-                    img {class : "svg" , src : "img/pics/hamburger.svg" , onclick : move |_| extended.toggle()}
+                    img {class : "svg" , src : "assets/img/pics/hamburger.svg" , onclick : move |_| extended.toggle()}
                 }
                 
             
