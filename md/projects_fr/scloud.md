@@ -21,6 +21,9 @@ Le client quant à lui va se charger de demander les ressources voulues au serve
 Si vous voulez voir par vous même comment ça marche vous pouvez accéder à la version hébergée sur mon Raspberry PI :)
 Vous pouvez accéder à la version web [ici](https://sylcpn.ddns.net).
 Ou télécharger la version adaptée à votre système [ici](https://github.com/SylaneCpn/SCloudUI/releases/latest) ( Attention !!! Je n'ai pas la possibilité de tester le fonctionnement de l'application pour Mac et IOS, il faudra se contenter de la version Web pour vous. Désolé...)
+En mode invité les fonctionnalités sont limitées,il est impossible de supprimer des fichier du serveur ou de rennomer une ressource.
+J'ai mis a disposition un compte spécial pour pouvoir aller plus loin avec l'application sans avoir à créer manuellement une session avec tout le monde.
+Vous pouvez donc vous connecter avec l'utilisateur "Community" et le mot de passe "4ALL" pour pouvoir jouer avec le dossier public. Il est à disposition pour tout le monde! N'hésitez pas à partager des choses !
 
 Le client à été développé à l'aide du Framework [Flutter](https://flutter.dev) afin de pouvoir développer facilement une application multiplateforme en bénéficiant d'une fantastique expérience développeur.
 Le serveur à été réalisé en Rust avec l'aide de la crate [Axum](https://docs.rs/axum/latest/axum/).
