@@ -27,8 +27,9 @@ Le serveur à été réalisé en Rust avec l'aide de la crate [Axum](https://doc
 
 Le projet à été réalisé en intégralité par moi même et est disponible sur mon Github. Il est complètement possible d'héberger soi-même le serveur pour avoir un Cloud personnel (même si je recommande de choisir une solution plus complète que la mienne) ! N'hésitez pas à me contacter par mail si vous avez besoin d'aide :)
 
-Lien du repo serveur : https://github.com/SylaneCpn/
-Lien du repo client : https://github.com/SylaneCpn/SCloudUI/
+Lien du repo serveur :[https://github.com/SylaneCpn/](https://github.com/SylaneCpn/SCloud)
+
+Lien du repo client : [https://github.com/SylaneCpn/SCloudUI/](https://github.com/SylaneCpn/SCloudUI/)
 
 
 
