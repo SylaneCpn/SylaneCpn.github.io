@@ -29,6 +29,8 @@
 
     * Développement Web
 
+    * Développement Fullstack
+
     * POO
 
     * Langages :
@@ -40,6 +42,8 @@
         * Assembleur ARM 
 
         * Rust
+
+        * Dart
 
         * Java 
 
@@ -56,6 +60,8 @@
         * Tkinter 
 
         * SFML
+
+        * Flutter
 
         * Dioxus
 

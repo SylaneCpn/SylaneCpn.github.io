@@ -34,7 +34,7 @@ pub fn Projects() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/projects_fr.md")}
-        h2 {"Projets passés"}
+        Box {title : "SCLoud" , children : rsx! {Md {content : include_str!("../md/projects_fr/scloud.md")}}}
         Box {title : "Pong.Js" , children : rsx! {Md {content : include_str!("../md/projects_fr/pong.md")}}}
         Box {title : "Snake.Js" , children : rsx! {Md {content : include_str!("../md/projects_fr/snake.md")}}}
         Box {title : "Prestation musicale lors du \"Dellec en caisse\"" , children : rsx! {Md {content : include_str!("../md/projects_fr/dellec.md")}}}
@@ -42,7 +42,7 @@ pub fn Projects() -> Element {
         Box {title : "Les dons de la mer" , children : rsx! {Md {content : include_str!("../md/projects_fr/c_genial.md")}}}
         Box {title : "Championnat de Guadeloupe de calcul mental niveau CE2" , children : rsx! {Md {content : include_str!("../md/projects_fr/maths.md")}}}
         h2 {"A venir..."}
-        Box {title : "Serveur de sockage de photos" , children : rsx! {Md {content : include_str!("../md/projects_fr/sylcpn_io.md")}}}
+        Box {title : "PicMaker" , children : rsx! {Md {content : include_str!("../md/projects_fr/picmaker.md")}}}
         Contacts {}
     }
 }

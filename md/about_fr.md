@@ -14,11 +14,11 @@ En grandissant, je découvre les mathématiques à l’école, et c’est très 
 
 Au collège, je choisis de l’option voile pour complémenter le reste de mes cours, une discipline que j’apprécie beaucoup et qui m’amène à arbitrer en 2016, le championnat UNSS de planche à voile dont je garde un excellent souvenir aujourd’hui.
 
-Après avoir obtenu mon brevet des collèges, je quitte la Guadeloupe et je pars m’installer avec mes parents et ma sœur en Bretagne dans la ville de Quimper. J’entre au Lycée de Cornouaille pour obtenir mon baccalauréat général. En première, je choisis de m’orienter vers la filière scientifique (à l’époque le BAC S). En terminale je choisis la spécialité mathématique et j’obtiens mon baccalauréat au contrôle continu en 2020 à la suite de la perturbation des épreuves lié à la crise sanitaire de la COVID-19 en 2020.
+Après avoir obtenu mon brevet des collèges, je quitte la Guadeloupe et je pars m’installer avec mes parents et ma sœur en Bretagne dans la ville de Quimper. J’entre au Lycée de Cornouaille pour obtenir mon baccalauréat général. En première, je choisis de m’orienter vers la filière scientifique (à l’époque le BAC S). En terminale je choisis la spécialité mathématique et j’obtiens mon baccalauréat au contrôle continu en 2020 à la suite de la perturbation des épreuves lié à la crise sanitaire de la COVID-19.
 
 Je choisi de poursuivre mes études supérieures à l’ENIB, je suis allé vers des études d’ingénieur pour mon goût des mathématiques et des sciences en général ainsi que grâce à l’excellent accueil des étudiants de l’ENIB au forum Azimut de Brest.
 
-A l’heure actuelle, je termine ma quatrième année et si tout se passe bien l’année scolaire 2025-2026 sera la dernière avant d’être diplômé. 
+A l’heure actuelle, je termine ma dernière année à l'ENIB avec un stage de fin d'études en temps que développeur logiciel chez Orange Innovation à Lannion. 
 
 ## Qu'est-ce que j'aime ?
 
