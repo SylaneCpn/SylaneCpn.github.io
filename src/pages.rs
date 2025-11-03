@@ -34,7 +34,7 @@ pub fn Projects() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/projects_fr.md")}
-        Box {title : "SCLoud" , children : rsx! {Md {content : include_str!("../md/projects_fr/scloud.md")}}}
+        Box {title : "SCloud" , children : rsx! {Md {content : include_str!("../md/projects_fr/scloud.md")}}}
         Box {title : "Pong.Js" , children : rsx! {Md {content : include_str!("../md/projects_fr/pong.md")}}}
         Box {title : "Snake.Js" , children : rsx! {Md {content : include_str!("../md/projects_fr/snake.md")}}}
         Box {title : "Prestation musicale lors du \"Dellec en caisse\"" , children : rsx! {Md {content : include_str!("../md/projects_fr/dellec.md")}}}
