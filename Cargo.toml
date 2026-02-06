@@ -4,26 +4,14 @@ version = "0.1.0"
 authors = ["sylane"]
 edition = "2021"
 
+[dependencies]
+dioxus = { version = "0.7.1", features = ["router"] }
+pulldown-cmark = "0.13.0"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-dioxus = { version = "0.6.0", features = ["router"] }
-pulldown-cmark = "0.12.2"
 
 [features]
 default = ["web"]
 web = ["dioxus/web"]
-desktop = ["dioxus/desktop"]
-mobile = ["dioxus/mobile"]
 
-[profile]
-
-[profile.wasm-dev]
-inherits = "dev"
-opt-level = 1
-
-[profile.server-dev]
-inherits = "dev"
-
-[profile.android-dev]
-inherits = "dev"

@@ -9,14 +9,12 @@ pub struct MarkdownProps {
     id: Signal<String>,
     #[props(default)]
     class: Signal<String>,
-
-    content: ReadOnlySignal<String>,
+    content: &'static str,
 }
-
 
 /// Render some text as markdown.
 fn Markdown(props: MarkdownProps) -> Element {
-    let content = &*props.content.read();
+    let content = props.content;
     let parser = Parser::new(content);
 
     let mut html_buf = String::new();
@@ -26,19 +24,21 @@ fn Markdown(props: MarkdownProps) -> Element {
         div {
             id: "{&*props.id.read()}",
             class: "{&*props.class.read()}",
-            dangerous_inner_html: "{html_buf}"
+            dangerous_inner_html: "{html_buf}",
         }
     }
 }
 
 // Api for markdown.
 #[component]
-pub fn Md(content : &'static str) -> Element {
+pub fn Md(content: &'static str) -> Element {
     let class = use_signal(|| String::from("md_class"));
     // link { rel: "stylesheet", href: "md.css" }
     rsx! {
-        
-        div { class: "md", Markdown { class: class, content: content } }
+
+        div { class: "md",
+            Markdown { class, content }
+        }
         script { "Prism.highlightAll()" }
     }
 }

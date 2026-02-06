@@ -1,9 +1,9 @@
 #![allow(non_snake_case)]
-mod md;
-mod pages;
-mod navbar;
-mod contacts;
 mod boxs;
+mod contacts;
+mod md;
+mod navbar;
+mod pages;
 
 use dioxus::prelude::*;
 //use tracing::Level;
@@ -22,13 +22,12 @@ enum Route {
     #[route("/school")]
     School {},
     #[route("/blog")]
-    Blog{},
+    Blog {},
     #[route("/:..route")]
     PageNotFound { route: Vec<String> },
 }
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
-
 
 fn main() {
     // Init logger
@@ -40,17 +39,14 @@ fn App() -> Element {
     rsx! {
         // link { rel: "stylesheet", href: "main.css" }
         document::Link { rel: "icon", href: FAVICON }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/main.css") }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/md.css") }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/navbar.css") }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/prism.css") }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/box.css") }
-        document::Link { rel: "stylesheet",href: asset!("./assets/css/contacts.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/main.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/md.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/navbar.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/prism.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/box.css") }
+        document::Link { rel: "stylesheet", href: asset!("/assets/css/contacts.css") }
         Router::<Route> {}
-        document::Script { src: asset!("./assets/js/prism.js") }
-        
+        document::Script { src: asset!("/assets/js/prism.js") }
+
     }
 }
-
-
-
