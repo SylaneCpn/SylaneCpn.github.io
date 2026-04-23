@@ -4,6 +4,7 @@ import 'package:sylane_website/component.dart';
 import 'package:sylane_website/custom_components.dart/contacts_box.dart';
 import 'package:sylane_website/custom_components.dart/navbar.dart';
 import 'package:sylane_website/router.dart';
+import 'package:web/helpers.dart';
 
 
 import 'package:web/web.dart' as web;
@@ -27,7 +28,7 @@ class App extends StateFullComponent<AppState> {
 
 
   void pageOnDomLoaded(web.Event _) {
-    state.replaceRouter();
+    state.setHref(window.location.pathname);
   }
 }
 
@@ -49,7 +50,7 @@ class App extends StateFullComponent<AppState> {
 
 
 class AppState extends ComponentState {
-  Router router = .new();
+  final Router router = .new();
 
   void setHref(String newPathName) {
     router.goToRoute(newPathName);
@@ -62,10 +63,6 @@ class AppState extends ComponentState {
     notify();
   }
 
-  void replaceRouter() {
-    router = .new();
-    notify();
-  }
 
 
 }
