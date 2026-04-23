@@ -4,7 +4,6 @@ import 'package:sylane_website/component.dart';
 import 'package:sylane_website/custom_components.dart/contacts_box.dart';
 import 'package:sylane_website/custom_components.dart/navbar.dart';
 import 'package:sylane_website/router.dart';
-import 'package:web/helpers.dart';
 
 
 import 'package:web/web.dart' as web;
@@ -28,7 +27,7 @@ class App extends StateFullComponent<AppState> {
 
 
   void pageOnDomLoaded(web.Event _) {
-    state.setHref(window.location.pathname);
+    state.setHref(Router.firstPath());
   }
 }
 
