@@ -1,5 +1,7 @@
+import 'dart:js_interop';
+
+import 'package:sylane_website/app.dart';
 import 'package:sylane_website/component.dart';
-import 'package:sylane_website/router.dart';
 import 'package:web/web.dart';
 
 class PageNotFound extends StatelessComponent {
@@ -24,11 +26,15 @@ class PageNotFound extends StatelessComponent {
           ..classList.add("centered")
           ..appendChild(
             HTMLAnchorElement()
-              ..href = "$basePath/"
+              ..onclick = goToHome.toJS
               ..style.marginTop = "200px"
               ..style.marginBottom = "200px"
               ..innerText = "Revenez à l'accueil."
           ),
       );
+    
   }
+  void goToHome() {
+      App.appState.setHref("/");
+    }
 }
