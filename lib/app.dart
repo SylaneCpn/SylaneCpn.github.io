@@ -13,7 +13,7 @@ class App extends StateFullComponent<AppState> {
 
   App() : super(state: appState) {
     web.window.addEventListener("popstate", state._onPopState.toJS);
-    web.window.addEventListener("DOMContentLoaded", pageOnDomLoaded.toJS);
+  
   }
   @override
   void build() {
@@ -24,10 +24,6 @@ class App extends StateFullComponent<AppState> {
 
   Component parseUrl() => state.router.getPage();
 
-
-  void pageOnDomLoaded(web.Event _) {
-    state.setHref(Router.firstPath());
-  }
 }
 
 // class AppState extends ComponentState {

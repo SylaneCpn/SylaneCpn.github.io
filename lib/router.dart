@@ -31,8 +31,8 @@ class Router {
  
 
   static String firstPath() {
-    if (basePath.isEmpty || basePath == "/") return "/";
     final initPath = web.window.location.pathname;
+    if (basePath.isEmpty || basePath == "/") return initPath;
     final basePathStartIndex = initPath.indexOf(basePath);
     if (basePathStartIndex != 0) {
       return initPath;
