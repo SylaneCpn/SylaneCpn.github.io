@@ -1,9 +1,26 @@
-# Development
+Source code from my personnal website
 
-Run the following command in the root of the project to start the Dioxus dev server:
+Made with [Dart](https://dart.dev).
 
-```bash
-dx serve --hot-reload
+Uses [`package:web`](https://pub.dev/packages/web)
+to interop with JS and the DOM.
+
+## Running and building
+
+To run the app,
+activate and use [`package:webdev`](https://dart.dev/tools/webdev):
+
+```
+dart pub global activate webdev
+webdev serve
 ```
 
-- Open the browser to http://localhost:8080
+To build a production version ready for deployment,
+use the `webdev build` command:
+
+```
+webdev build
+```
+
+To learn how to interop with web APIs and other JS libraries,
+check out https://dart.dev/interop/js-interop.

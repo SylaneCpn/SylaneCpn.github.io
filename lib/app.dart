@@ -1,0 +1,58 @@
+import 'dart:js_interop';
+
+import 'package:sylane_website/component.dart';
+import 'package:sylane_website/custom_components.dart/contacts_box.dart';
+import 'package:sylane_website/custom_components.dart/navbar.dart';
+import 'package:sylane_website/router.dart';
+
+import 'package:web/web.dart' as web;
+
+class App extends StateFullComponent<AppState> {
+  static AppState appState = .new();
+
+  App() : super(state: appState) {
+    web.window.addEventListener("popstate", state._onPopState.toJS);
+  }
+  @override
+  void build() {
+    addChild(Navbar());
+    addChild(parseUrl());
+    addChild(ContactsBox());
+  }
+
+  Component parseUrl() => appState.router.getPage();
+}
+
+// class AppState extends ComponentState {
+//   static const String basePath = "";
+//   String pathName = web.window.location.pathname;
+
+//   void setHref(String newPathName) {
+//     pathName = "$basePath$newPathName";
+//     web.window.history.pushState(pathName.toJS, "", pathName);
+//     notify();
+//   }
+
+//   void onPopState(web.PopStateEvent event) {
+//     pathName = event.state?.toString() ?? "$basePath/";
+//     notify();
+//   }
+// }
+
+
+class AppState extends ComponentState {
+  final Router router = .new();
+
+  void setHref(String newPathName) {
+    router.goToRoute(newPathName);
+    web.window.history.pushState(router.pathName.toJS, "", router.fullPath);
+    notify();
+  }
+
+  void _onPopState(web.PopStateEvent event) {
+    router.goToRoute(event.state?.toString() ?? "/");
+    notify();
+  }
+
+
+}
