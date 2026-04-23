@@ -5,6 +5,7 @@ import 'package:sylane_website/custom_components.dart/contacts_box.dart';
 import 'package:sylane_website/custom_components.dart/navbar.dart';
 import 'package:sylane_website/router.dart';
 
+
 import 'package:web/web.dart' as web;
 
 class App extends StateFullComponent<AppState> {
@@ -12,6 +13,7 @@ class App extends StateFullComponent<AppState> {
 
   App() : super(state: appState) {
     web.window.addEventListener("popstate", state._onPopState.toJS);
+    web.window.addEventListener("DOMContentLoaded", pageOnDomLoaded.toJS);
   }
   @override
   void build() {
@@ -21,7 +23,12 @@ class App extends StateFullComponent<AppState> {
     addChild(ContactsBox());
   }
 
-  Component parseUrl() => appState.router.getPage();
+  Component parseUrl() => state.router.getPage();
+
+
+  void pageOnDomLoaded(web.Event _) {
+    state.setHref(Router.firstPath());
+  }
 }
 
 // class AppState extends ComponentState {
