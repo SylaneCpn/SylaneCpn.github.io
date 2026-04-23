@@ -19,7 +19,7 @@ class App extends StateFullComponent<AppState> {
   void build() {
     addChild(Navbar());
     addChild(parseUrl());
-    element.append(web.HTMLParagraphElement()..innerText = appState.router.pathName);
+    // element.append(web.HTMLParagraphElement()..innerText = appState.router.pathName);
     addChild(ContactsBox());
   }
 
@@ -27,7 +27,7 @@ class App extends StateFullComponent<AppState> {
 
 
   void pageOnDomLoaded(web.Event _) {
-    state.setHref(Router.firstPath());
+    state.replaceRouter();
   }
 }
 
@@ -49,7 +49,7 @@ class App extends StateFullComponent<AppState> {
 
 
 class AppState extends ComponentState {
-  final Router router = .new();
+  Router router = .new();
 
   void setHref(String newPathName) {
     router.goToRoute(newPathName);
@@ -59,6 +59,11 @@ class AppState extends ComponentState {
 
   void _onPopState(web.PopStateEvent event) {
     router.goToRoute(event.state?.toString() ?? "/");
+    notify();
+  }
+
+  void replaceRouter() {
+    router = .new();
     notify();
   }
 
