@@ -7,7 +7,7 @@ import 'package:web/web.dart' as web;
 
 
 // if not empty, `basePath` must strat with "/"
-final basePath = "";
+const basePath = "/";
 
 String ressource(String ressource) {
   if (basePath.isEmpty || basePath == "/") {
@@ -28,6 +28,10 @@ class Router {
   //   return "/$basePath";
   // }
 
+  Router() {
+    _pathName = firstPath();
+  }
+
   static String firstPath() {
     if (basePath.isEmpty || basePath == "/") return "/";
     final initPath = web.window.location.pathname;
@@ -41,7 +45,7 @@ class Router {
 
   }
 
-  String _pathName = firstPath();
+  late String _pathName;
 
   String get pathName => _pathName;
 
