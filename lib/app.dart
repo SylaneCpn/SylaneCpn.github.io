@@ -19,7 +19,6 @@ class App extends StateFullComponent<AppState> {
   void build() {
     addChild(Navbar());
     addChild(parseUrl());
-    element.append(web.HTMLParagraphElement()..innerText = appState.router.pathName);
     addChild(ContactsBox());
   }
 

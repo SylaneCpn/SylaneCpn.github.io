@@ -28,9 +28,7 @@ class Router {
   //   return "/$basePath";
   // }
 
-  Router() {
-    _pathName = firstPath();
-  }
+ 
 
   static String firstPath() {
     if (basePath.isEmpty || basePath == "/") return "/";
@@ -45,7 +43,7 @@ class Router {
 
   }
 
-  late String _pathName;
+  String _pathName = firstPath();
 
   String get pathName => _pathName;
 
